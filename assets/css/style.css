@@ -40,6 +40,22 @@ h1, h2, h3, p {
   overflow: auto;
 }
 
+.feedback {
+  padding: 5px 10px;
+  margin-top: auto;
+  overflow: auto;
+}
+
+.correct {
+  color: green;
+  font-style: italic;
+}
+
+.incorrect {
+  color: red;
+  font-style: italic;
+}
+
 /*Image styling*/
 .animal-image {
   margin: 30px auto;

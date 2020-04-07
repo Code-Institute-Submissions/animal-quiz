@@ -69,7 +69,7 @@ function checkAnswer(x) {
   //This is so that the user can't change their answer after seeing feedback.
   $("#options" + x + "").hide();
   //Returns correct or incorrect feedback depending on whether the submitted answer
-  //matches the correct answer stored. 
+  //matches the correct answer stored.
   if (checkedAnswer === sessionStorage.getItem("answer" + x + "")) {
     $("#feedback" + x + "-correct").show();
   } else {

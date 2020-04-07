@@ -18,38 +18,58 @@
     <!-- Quiz starts here -->
     <main>
       <form class="quizquestion" id="question1" data-question="1">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-1.jpg" alt="A sheep, a mouse, a horse and a cat" class="img-fluid">
         </div>
         <h3>1. Which of these animals can differentiate between humans when shown two photographs?</h3>
         <ul id="options1">
-          <li><input type="radio" name="question1" value="a" id="question1a" class="form-check-input"><label for="question1a" class="form-check-label"> a. Cats</label></li>
+          <li><input type="radio" name="question1" value="a" id="question1a" class="form-check-input"><label for="question1a" checked class="form-check-label"> a. Cats</label></li>
           <li><input type="radio" name="question1" value="b" id="question1b" class="form-check-input"><label for="question1b" class="form-check-label"> b. Mice</label></li>
           <li><input type="radio" name="question1" value="c" id="question1c" class="form-check-input"><label for="question1c" class="form-check-label"> c. Horses</label></li>
           <li><input type="radio" name="question1" value="d" id="question1d" class="form-check-input"><label for="question1d" class="form-check-label"> d. Sheep</label></li>
         </ul>
-        <div class="feedback" id="feedback1-correct">Correct!</div>
-        <div class="feedback" id="feedback1-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback1-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/happy-lamb.gif" alt="Running lamb" class="img-fluid mx-auto"></p>
+          <p>Studies have shown that sheep have facial recognition capabilities comparable to those of monkeys, apes and humans. </p>
+        </div>
+        <div class="feedback text-center" id="feedback1-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The correct answer is sheep. Studies have shown that sheep have facial recognition capabilities comparable to those of monkeys, apes and humans. </p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question2" data-question="2">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-2.jpg" alt="A human and an ant" class="img-fluid">
         </div>
-        <h3>2. Which of these animals coordinate construction, reproduction, resource gathering, and war using a complex language?</h3>
+        <h3>2. Which of these animals can coordinate construction, reproduction, resource gathering, and war using a complex language?</h3>
         <ul id="options2">
           <li><input type="radio" name="question2" value="a" id="question2a" class="form-check-input"><label for="question2a" class="form-check-label"> a. Humans</label></li>
           <li><input type="radio" name="question2" value="b" id="question2b" class="form-check-input"><label for="question2b" class="form-check-label"> b. Ants</label></li>
           <li><input type="radio" name="question2" value="c" id="question2c" class="form-check-input"><label for="question2c" class="form-check-label"> c. Both</label></li>
         </ul>
-        <div class="feedback" id="feedback2-correct">Correct!</div>
-        <div class="feedback" id="feedback2-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback2-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/ants.gif" alt="Ants carrying a leaf" class="img-fluid mx-auto"></p>
+          <p>Humans aren't the only animal with complex social structures. Ant colonies can grow to include hundreds of millions of ants, all working together towards a common goal.</p>
+        </div>
+        <div class="feedback text-center" id="feedback2-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The correct answer is both. Humans aren't the only animal with complex social structures. Ant colonies can grow to include hundreds of millions of ants, all working together towards a common goal.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question3" data-question="3">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-3.jpg" alt="A buffalo, a human, a treeshrew and a mouse" class="img-fluid">
         </div>
         <h3>3. Which of these mammals has the largest brain to body mass ratio?</h3>
@@ -59,29 +79,49 @@
           <li><input type="radio" name="question3" value="c" id="question3c" class="form-check-input"><label for="question3c" class="form-check-label"> c. Treeshrews</label></li>
           <li><input type="radio" name="question3" value="d" id="question3d" class="form-check-input"><label for="question3d" class="form-check-label"> d. Mice</label></li>
         </ul>
-        <div class="feedback" id="feedback3-correct">Correct!</div>
-        <div class="feedback" id="feedback3-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback3-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/treeshrew.gif" alt="Treeshrew eating" class="img-fluid mx-auto"></p>
+          <p>About 10% of a treeshrew's body mass is their brain. Mice have the 2nd largest brain to body mass ratio and humans third.</p>
+        </div>
+        <div class="feedback text-center" id="feedback3-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The correct answer is treeshrews. About 10% of their body mass can be attributed to their brain. Mice have the 2nd largest brain to body mass ratio and humans third.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question4" data-question="4">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-4.jpg" alt="A cat, an octopus, a dolphin and a dog" class="img-fluid">
         </div>
-        <h3>4. Which animal has a short term memory about 20 times as long as a human?</h3>
+        <h3>4. Which animal is thought to have a short term memory about 20 times as long as a human?</h3>
         <ul id="options4">
           <li><input type="radio" name="question4" value="a" id="question4a" class="form-check-input"><label for="question4a" class="form-check-label"> a. Cats</label></li>
           <li><input type="radio" name="question4" value="b" id="question4b" class="form-check-input"><label for="question4b" class="form-check-label"> b. Octopi</label></li>
           <li><input type="radio" name="question4" value="c" id="question4c" class="form-check-input"><label for="question4c" class="form-check-label"> c. Dolpins</label></li>
           <li><input type="radio" name="question4" value="d" id="question4d" class="form-check-input"><label for="question4d" class="form-check-label"> d. Dogs</label></li>
         </ul>
-        <div class="feedback" id="feedback4-correct">Correct!</div>
-        <div class="feedback" id="feedback4-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback4-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/cat-glasses.gif" alt="Cat with glasses" class="img-fluid mx-auto"></p>
+          <p>Cats are believed to have a short term memory of 16 hours, whereas dogs only 5 minutes.</p>
+        </div>
+        <div class="feedback text-center" id="feedback4-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The correct answer is cats. They are believed to have a short term memory of 16 hours, whereas dogs only 5 minutes.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question5" data-question="5">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-5.jpg" alt="A cow, a human and an elephant" class="img-fluid">
         </div>
         <h3>5. Which of these mourn the loss of a loved one?</h3>
@@ -91,13 +131,25 @@
           <li><input type="radio" name="question5" value="c" id="question5c" class="form-check-input"><label for="question5c" class="form-check-label"> c. Elephants</label></li>
           <li><input type="radio" name="question5" value="d" id="question5d" class="form-check-input"><label for="question5d" class="form-check-label"> d. All of the above</label></li>
         </ul>
-        <div class="feedback" id="feedback5-correct">Correct!</div>
-        <div class="feedback" id="feedback5-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback5-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/cow.gif" alt="Cow in meadow being petted by woman" class="img-fluid mx-auto"></p>
+          <p>Elephants form strong bonds with other members of their herds, as they can live for 70 years. When one member of the herd passes away, the rest of the herd mourns his/her death. They even perform rituals like covering the body with
+            leaves and grass. Mother cows often cry for days when their newborn calves are taken from them in the dairy industry.</p>
+        </div>
+        <div class="feedback text-center" id="feedback5-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The answer is both! Elephants form strong bonds with other members of their herds, as they can live for 70 years. When one member of the herd passes away, the rest of the herd mourns his/her death. They even perform rituals like covering
+            the body with leaves and grass. Mother cows often cry for days when their newborn calves are taken from them in the dairy industry.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question6" data-question="6">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-6.jpg" alt="A dog, a monkey, a rhino and a dolphin" class="img-fluid">
         </div>
         <h3>6. Which of these animals have names for each other?</h3>
@@ -107,13 +159,23 @@
           <li><input type="radio" name="question6" value="c" id="question6c" class="form-check-input"><label for="question6c" class="form-check-label"> c. Rhinos</label></li>
           <li><input type="radio" name="question6" value="d" id="question6d" class="form-check-input"><label for="question6d" class="form-check-label"> d. Dolphins</label></li>
         </ul>
-        <div class="feedback" id="feedback6-correct">Correct!</div>
-        <div class="feedback" id="feedback6-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        <div class="feedback text-center" id="feedback6-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/dolphins.gif" alt="Dolphins" class="img-fluid mx-auto"></p>
+          <p>Scientists have found that dolphines use dinstinctive whistles to call and identify each other. A recent study showed that dolphins will react to their name being called, just like humans do.</p>
+        </div>
+        <div class="feedback text-center" id="feedback6-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p>The correct answer is dolphins! Scientists have found that dolphines use dinstinctive whistles to call and identify each other. A recent study showed that dolphins will react to their name being called, just like humans do.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
 
       <form class="quizquestion" id="question7" data-question="7">
-        <div class="animal-image mx-auto">
+        <div class="animal-image mx-auto text-center">
           <img src="assets/images/quiz-image-7.jpg" alt="A crocodile, a chicken, a polar bear and a tiger" class="img-fluid">
         </div>
         <h3>7. Which animal talks to their unborn babies?</h3>
@@ -123,18 +185,26 @@
           <li><input type="radio" name="question7" value="c" id="question7c" class="form-check-input"><label for="question7c" class="form-check-label"> c. Polar bears</label></li>
           <li><input type="radio" name="question7" value="d" id="question7d" class="form-check-input"><label for="question7d" class="form-check-label"> d. Tigers</label></li>
         </ul>
-        <div class="feedback" id="feedback7-correct">Correct!</div>
-        <div class="feedback" id="feedback7-incorrect">Wrong!</div>
-        <button type="button" id="submit" class="btn btn-light btn-lg">Submit</button>
+        <div class="feedback text-center" id="feedback7-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/chicken.gif" alt="Chicken" class="img-fluid mx-auto"></p>
+          <p>Mother hens are amazing moms even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+        </div>
+        <div class="feedback text-center" id="feedback7-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p> The correct answer is chickens! Mother hens are amazing mothers even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+        </div>
+        <div class="button text-center">
+          <button type="button" id="submit" class="btn btn-light btn-lg">Next</button>
+        </div>
       </form>
       <div id="results"></div>
     </main>
     <!--End of Quiz-->
     <!-- Beginning of Footer -->
     <footer>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p></p>
     </footer>
     <!-- End of Footer -->
   </section>

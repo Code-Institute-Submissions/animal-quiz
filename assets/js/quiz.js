@@ -65,6 +65,7 @@ function recordAnswer(x) {
 //shows feedback below radio buttons when selecting a radio button
 function checkAnswer(x) {
   var checkedAnswer = $("input[name=question" + x + "]:checked").val();
+  $("#options" + x + "").hide();
   if (checkedAnswer === sessionStorage.getItem("answer" + x + "")) {
     $("#feedback" + x + "-correct").show();
   } else {

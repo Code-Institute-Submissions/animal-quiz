@@ -65,7 +65,11 @@ function recordAnswer(x) {
 //shows feedback below radio buttons when selecting a radio button
 function checkAnswer(x) {
   var checkedAnswer = $("input[name=question" + x + "]:checked").val();
+  //hides unordered list with options once user selects their answer.
+  //This is so that the user can't change their answer after seeing feedback.
   $("#options" + x + "").hide();
+  //Returns correct or incorrect feedback depending on whether the submitted answer
+  //matches the correct answer stored. 
   if (checkedAnswer === sessionStorage.getItem("answer" + x + "")) {
     $("#feedback" + x + "-correct").show();
   } else {

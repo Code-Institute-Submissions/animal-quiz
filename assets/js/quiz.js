@@ -55,9 +55,17 @@ function recordAnswer(x) {
   if (submittedAnswer === sessionStorage.getItem("answer" + x + "")) {
     score++;
   };
-  //returns total score after the last question
+  //returns total score after the last question and gives results depending on how many answers were correct
   if (x == total) {
-    $("#results").html(`<h3>You got ${score} out of ${highScore} correct!</h3><a href="index.html">Try again!</a>`);
+    if (score == 8) {
+      $("#results").html(`<h3>Wow! You answered everything correctly!</h3><p>You're basically as smart as this bunny!</p><p><img src="assets/images/gifs/bunny.gif" alt="Bunny" class="img-fluid mx-auto"></p><p><strong>There's always more to learn about our neighbors on this planet. Try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p><a href="index.html">Try again!</a>`);
+    } else if (score < 8 && score >= 5) {
+      $("#results").html(`<h3>You got ${score} out of ${highScore} correct!</h3><p>You might not be as resourceful as this bunny, but you did all right!</p><p><img src="assets/images/gifs/bunny.gif" alt="Bunny" class="img-fluid mx-auto"></p><p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p><a href="index.html">Try again!</a>`);
+    } else if (score < 5 && score > 0) {
+      $("#results").html(`<h3>You only got ${score} out of ${highScore} correct...</h3><p>You should probably study a bit more before you try again.</p><p><img src="assets/images/gifs/dog.gif" alt="Dog jumping into bush" class="img-fluid mx-auto"></p><p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p><a href="index.html">Try again!</a>`);
+    } else {
+      $("#results").html(`<h3>You got everything wrong! </h3><p>You should probably study a bit more before you try again.</p><p><img src="assets/images/gifs/dog.gif" alt="Dog jumping into bush" class="img-fluid mx-auto"></p><p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p><a href="index.html">Try again!</a>`);
+    };
   };
   return false;
 }

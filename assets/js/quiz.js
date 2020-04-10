@@ -1,7 +1,7 @@
 //Initial score is 0
 var score = 0;
 //Total amount of questions
-var total = 7;
+var total = 8;
 //Points received for each correct answer
 var point = 1;
 //Highest possible score
@@ -17,7 +17,7 @@ function init() {
   sessionStorage.setItem("answer5", "d");
   sessionStorage.setItem("answer6", "d");
   sessionStorage.setItem("answer7", "b");
-
+  sessionStorage.setItem("answer8", "b");
 }
 
 $(document).ready(function() {
@@ -77,6 +77,26 @@ function checkAnswer(x) {
   }
   return false;
 };
+
+//Google Map function for quiz question number 8 which adds a map.
+//Code adapted from developers.google.com instructions on adding a map.
+
+function initMap() {
+  var madagascar = {
+    lat: -18.7669,
+    lng: 46.8691
+  };
+  var map = new google.maps.Map(
+    document.getElementById("map"), {
+      zoom: 4,
+      center: madagascar
+    });
+  //Marker for Madagascar
+  var marker = new google.maps.Marker({
+    position: madagascar,
+    map: map
+  });
+}
 
 //wait for page to load completely before starting init function
 window.addEventListener("load", init, false);

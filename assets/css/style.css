@@ -4,13 +4,8 @@ body {
   font-family: 'Hind Siliguri', sans-serif;
 }
 
-li {
-  list-style-type: none;
-  font-size: 17px;
-}
-
 .container {
-  width: 70%;
+  width: 90%;
   margin: 15px auto;
   overflow: auto;
 }
@@ -31,8 +26,21 @@ footer {
   overflow: auto;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
   font-weight: 300;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15px;
+}
+
+p {
+  font-size: 15px;
 }
 
 .intro {
@@ -58,14 +66,15 @@ h1, h2, h3, p {
 
 #map {
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-color: grey;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /*Image styling*/
 .animal-image {
-  margin: 30px auto;
-  width: 90%;
+  display: none;
 }
 
 /* Button styling */
@@ -84,8 +93,34 @@ h1, h2, h3, p {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 991.98px) {
+/* Styling for medium and large devices such as laptops and tablets. The website has been
+developed to be mobile first. */
+@media (min-width: 768px) {
   .container {
+    width: 80%;
+  }
+
+  .animal-image {
+    margin: 30px auto;
     width: 90%;
+    display: block;
+  }
+
+  li {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  #map {
+    height: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }

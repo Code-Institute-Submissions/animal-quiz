@@ -39,7 +39,7 @@ $(document).ready(function() {
   //on click event for when a next (submit) button is clicked. It runs the recordAnswer function
   //which will increase the score by 1 if the user selected the correct answer. And it hides the
   //current question and shows the next question.
-  $(".quizquestion #submit").click(function() {
+  $(".quizquestion .submit").click(function() {
     var currentQuestion = $(this).parents("form:first").data("question");
     var nextQuestion = $(this).parents("form:first").data("question") + 1;
     recordAnswer("" + currentQuestion + "")

@@ -51,11 +51,14 @@ $(document).ready(function() {
 
 //calculate scores by recording each answer and adding 1 to the total score if correct
 function recordAnswer(x) {
+  //Checks which radio button was selected
   var submittedAnswer = $("input[name=question" + x + "]:checked").val();
+  //Checks whether the radio button selected matches the correct answer in sessionStorage
   if (submittedAnswer === sessionStorage.getItem("answer" + x + "")) {
     score++;
   };
-  //returns total score after the last question and gives results depending on how many answers were correct
+
+  //returns total score after the last question and adds html code to give results depending on how many answers were correct
   if (x == total) {
     if (score == 8) {
       $("#results").html(`<div class="text-center"><h3>Wow! You answered everything correctly!</h3><p>You're pretty much as impressive as this bird!</p><p><img src="assets/images/gifs/smart-bird.gif" alt="Bird playing game" class="img-fluid mx-auto"></p><p><strong>There's always more to learn about our neighbors on this planet. Try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p><div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Start over!</button></a></div></div>`);
@@ -77,7 +80,7 @@ function checkAnswer(x) {
   //This is so that the user can't change their answer after seeing feedback.
   $("#options" + x + "").hide();
   //Returns correct or incorrect feedback depending on whether the submitted answer
-  //matches the correct answer stored.
+  //matches the correct answer stored in sessionStorage.
   if (checkedAnswer === sessionStorage.getItem("answer" + x + "")) {
     $("#feedback" + x + "-correct").show();
   } else {
@@ -96,7 +99,7 @@ function initMap() {
   };
   var map = new google.maps.Map(
     document.getElementById("map"), {
-      zoom: 4,
+      zoom: 3,
       center: madagascar
     });
   //Marker for Madagascar

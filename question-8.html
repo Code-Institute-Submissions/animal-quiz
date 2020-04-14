@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <title>Animal Trivia</title>
+</head>
+
+<body class="bg-light">
+  <section class="container">
+    <header class="text-center">
+      <h1>How much do you know about animals?</h1>
+    </header>
+    <!-- Start of Quiz -->
+    <main>
+      <!-- Start of Question 8 -->
+      <form class="quizquestion" id="question8" data-question="8">
+        <h3>8. Look at the marker on this map. Which animal lives only in that location?</h3>
+        <div id="map"></div>
+        <ul id="options8">
+          <li><input type="radio" name="question8" value="a" id="question8a" class="form-check-input"><label for="question8a" class="form-check-label option" data-number="1"> </label></li>
+          <li><input type="radio" name="question8" value="b" id="question8b" class="form-check-input"><label for="question8b" class="form-check-label option" data-number="2"> </label></li>
+          <li><input type="radio" name="question8" value="c" id="question8c" class="form-check-input"><label for="question8c" class="form-check-label option" data-number="3"></label></li>
+          <li><input type="radio" name="question8" value="d" id="question8d" class="form-check-input"><label for="question8d" class="form-check-label option" data-number="4"> </label></li>
+        </ul>
+        <div class="feedback text-center" id="feedback8-correct">
+          <h4 class="correct">Correct!</h4>
+          <p><img src="assets/images/gifs/lemur.gif" alt="Lemurs walking" class="img-fluid mx-auto"></p>
+          <p>Lemurs can only be found in Madagascar and neighboring islands. Platypuses live in Eastern Australia. Giant tortoises only live on the Galápagos Islands and Aldabra. And Tarsiers only call the islands of South East Asia home. </p>
+        </div>
+        <div class="feedback text-center" id="feedback8-incorrect">
+          <h4 class="incorrect">Wrong!</h4>
+          <p><img src="assets/images/gifs/angry-bird.gif" alt="Angry bird" class="img-fluid mx-auto"></p>
+          <p> The correct answer is lemurs! Lemurs can only be found in Madagascar and neighboring islands. Platypuses live in Eastern Australia. Giant tortoises only live on the Galápagos Islands and Aldabra. And Tarsiers only call the islands
+            of South East Asia home. </p>
+        </div>
+        <div class="button text-center">
+          <button type="button" class="btn btn-light btn-lg submit">Next</button>
+        </div>
+      </form>
+
+      <!-- End of Question 8 -->
+      <!--End of Quiz-->
+      <!-- Beginning of Footer -->
+      <footer>
+        <p></p>
+      </footer>
+      <!-- End of Footer -->
+  </section>
+
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/question-8.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCGAVLP1tFEv-i5pVcwEyZ_gkekmKeR-0&callback=initMap">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+[{
+    "latitude": "-25.2744",
+    "longitude": "133.7751",
+    "option_a": "Kangaroo rats",
+    "option_b": "Platypuses",
+    "option_c": "Zacatuche, or rabbit of the volcanoes",
+    "option_d": "Lemurs",
+    "correct": "Platypuses"
+}, {
+    "latitude": "36.9741",
+    "longitude": "-122.0308",
+    "option_a": "Platypuses",
+    "option_b": "Kangaroo rats",
+    "option_c": "Zacatuche, or rabbit of the volcanoes",
+    "option_d": "Lemurs",
+    "correct": "Kangaroo rats"
+}, {
+    "latitude": "-18.7669",
+    "longitude": "46.8691",
+    "option_a": "Kangaroo rats",
+    "option_b": "Lemurs",
+    "option_c": "Zacatuche, or rabbit of the volcanoes",
+    "option_d": "Platypuses",
+    "correct": "Lemurs"
+}, {
+    "latitude": "23.6345",
+    "longitude": "-102.5528",
+    "option_a": "Kangaroo rats",
+    "option_b": "Zacatuche, or rabbit of the volcanoes",
+    "option_c": "Platypuses",
+    "option_d": "Lemurs",
+    "correct": "Zacatuche, or rabbit of the volcanoes"
+}]

@@ -2,7 +2,6 @@ const options = Array.from(document.getElementsByClassName("option"));
 
 let possibleMapQuestions = [];
 let currentMapQuestion = {};
-$(".feedback").hide();
 
 let mapQuestions = [{
     latitude: -25.2744,

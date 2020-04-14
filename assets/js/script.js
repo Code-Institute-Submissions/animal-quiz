@@ -108,25 +108,5 @@ function checkAnswer(x) {
   }
 };
 
-//Google Map function for quiz question number 8 which adds a map.
-//Code adapted from developers.google.com instructions on adding a map.
-
-function initMap() {
-  var madagascar = {
-    lat: -18.7669,
-    lng: 46.8691
-  };
-  var map = new google.maps.Map(
-    document.getElementById("map"), {
-      zoom: 3,
-      center: madagascar
-    });
-  //Marker for Madagascar
-  var marker = new google.maps.Marker({
-    position: madagascar,
-    map: map
-  });
-}
-
 //wait for page to load completely before starting init function
 window.addEventListener("load", init, false);

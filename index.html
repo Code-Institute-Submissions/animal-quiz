@@ -209,13 +209,13 @@
       <!-- End of Question 7 -->
       <!-- Start of Question 8 -->
       <form class="quizquestion" id="question8" data-question="8">
-        <div id="map"></div>
         <h3>8. Look at the marker on this map. Which animal lives only in that location?</h3>
+        <div id="map"></div>
         <ul id="options8">
-          <li><input type="radio" name="question8" value="a" id="question8a" class="form-check-input"><label for="question8a" class="form-check-label">Platypuses</label></li>
-          <li><input type="radio" name="question8" value="b" id="question8b" class="form-check-input"><label for="question8b" class="form-check-label">Lemurs</label></li>
-          <li><input type="radio" name="question8" value="c" id="question8c" class="form-check-input"><label for="question8c" class="form-check-label">Giant tortoises</label></li>
-          <li><input type="radio" name="question8" value="d" id="question8d" class="form-check-input"><label for="question8d" class="form-check-label">Tarsiers</label></li>
+          <li><input type="radio" name="question8" value="a" id="question8a" class="form-check-input"><label for="question8a" class="form-check-label option" data-number="1"> </label></li>
+          <li><input type="radio" name="question8" value="b" id="question8b" class="form-check-input"><label for="question8b" class="form-check-label option" data-number="2"> </label></li>
+          <li><input type="radio" name="question8" value="c" id="question8c" class="form-check-input"><label for="question8c" class="form-check-label option" data-number="3"></label></li>
+          <li><input type="radio" name="question8" value="d" id="question8d" class="form-check-input"><label for="question8d" class="form-check-label option" data-number="4"> </label></li>
         </ul>
         <div class="feedback text-center" id="feedback8-correct">
           <h4 class="correct">Correct!</h4>
@@ -232,6 +232,7 @@
           <button type="button" class="btn btn-light btn-lg submit">Next</button>
         </div>
       </form>
+
       <!-- End of Question 8 -->
 
       <div id="results"></div>
@@ -248,6 +249,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/question-8.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCGAVLP1tFEv-i5pVcwEyZ_gkekmKeR-0&callback=initMap">
   </script>
 </body>

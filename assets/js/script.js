@@ -33,7 +33,7 @@ $(document).ready(function() {
     //variable that determines the question the user is currently on
     var currentQuestion = $(this).parents("form:first").data("question");
     //runs the checkAnswer function to show feedback
-    checkAnswer("" + currentQuestion + "");
+    checkAnswer(currentQuestion);
   });
 
   //on click event for when a next (submit) button is clicked. It runs the recordAnswer function

@@ -18,7 +18,7 @@ function init() {
   sessionStorage.setItem("answer6", "d");
   sessionStorage.setItem("answer7", "b");
   sessionStorage.setItem("answer8", "b");
-}
+};
 
 $(document).ready(function() {
   //Hides all questions when page is loaded

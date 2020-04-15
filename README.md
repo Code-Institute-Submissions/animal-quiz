@@ -10,9 +10,59 @@ Here is a link to the repository: https://github.com/debrawolford/animal-quiz.gi
 Here is a link to the live preview: https://debrawolford.github.io/animal-quiz/
 
 ## UX design
-[Click here](https://github.com/debrawolford/animal-quiz/tree/master/wireframes) to see all the wireframes for this project.
+![Responsive Design](wireframes/responsive-design.png)
 
-Below is a summary of the UX Design process.
+### The Strategy Plane
+
+* The primary site goals are to offer a fun experience to users while teaching them some facts about animals.
+
+* The primary user goals are to learn more about animals while testing their knowledge.
+
+#### Who is the primary audience for this website?
+* Animal lovers who want to see how much they know about animals and be able to share this information with their friends.
+
+#### How are we presenting the content?
+* With a minimalistic style that makes navigating the quiz very straightforward.
+
+####  Who else has done this and what have they done well/could be done better?
+* [National Geographic](https://kids.nationalgeographic.com/games/quizzes/quiz-whiz-animals/):
+  * The counter at the top showing how many questions are left and which ones were answered correctly is really nice.
+  * The color scheme is a bit too much in my opinion. It takes away from the images some times (like the one of the giraffe).
+  * I like the immediate feedback with more information.
+
+### The Scope Plane
+
+#### Sample User Stories
+
+User Story | Requirements for User
+------------ | -------------
+As a family, we want to take the quiz and compare our results. | A page at the end of the quiz displaying the amount of questions people have gotten correct and how well they did compared to others. Maybe a high score list or a way to share results via email or social media.
+As someone without a computer, I want to take the quiz on my phone and still get all the same information. | A responsive, simple design is needed that will render well on phones. Making the text smaller and removing the images so that all the information can still be displayed properly.
+As someone who doesn't know much about animals, I want to learn some new things while taking this quiz. | Offer extra information as feedback every time a question is answered. And at the end of the quiz recommend they read the book *animalkind*, which will give them the chance to learn even more.
+As someone who isn't too tech-savvy, I still want to be able to take the quiz. | The quiz should be very straightforward, with minimal buttons and navigation menus. Simply the choices and a "Next" button should be enough.  
+
+### The Structure Plane
+
+
+(a) **Is it consistent?** The color pattern, the fonts and the header/footer will be the same on every page.
+
+(b) **Is it predictable?** The header has the page title and each page has a straightforward design with one question, 4 options, and a next button.
+
+(c) **Is it learnable?** When hovering over buttons the mouse will change to a hand to allow the user to see that they can select the option.
+
+(d) **Is it visible?** Everything is visible when loading the page. There is no scrolling needed until the feedback pops up, but by that point the user will have already seen the next button below.
+
+(e) **Does it provide clear feedback?** Every time a user selects an answer they are immediately told whether it is correct or incorrect. At the end of the quiz they will get more detailed results showing how many they got correct in total.
+
+### The Skeleton Plane
+
+Below are the wireframes for desktop. [Click here](https://github.com/debrawolford/animal-quiz/tree/master/wireframes) to see all the wireframes for this project.
+
+![Animal Quiz Homepage](wireframes/animal-quiz-home.png)
+
+![Animal Quiz Feedback](wireframes/animal-quiz-feedback.png)
+
+![Animal Quiz Results](wireframes/animal-quiz-results.png)
 
 ## Features
 
@@ -61,6 +111,7 @@ Below is a summary of the UX Design process.
 * [Google Fonts](https://fonts.google.com/): Used to get fonts used in the quiz (Hind Siliguri).
 * [Jquery](https://jquery.com/) : Used within script.js to make manipulating the DOM more straightforward.
 * [Google Maps API](https://developers.google.com/maps/documentation/javascript/adding-a-google-map?hl=en_US): Used to generate random map markers for question 8.
+* [Am I Responsive](http://ami.responsivedesign.is/): Used to get a screenshot of different screen sizes for README file.
 
 ## Testing
 
@@ -85,6 +136,15 @@ When testing script.js: "Code is syntactically valid."
 When testing question-8.js: "Code is syntactically valid."
 
 ### User Stories Testing
+
+1. As a family, we want to take the quiz and compare our results.
+* 
+
+2. As someone without a computer, I want to take the quiz on my phone and still get all the same information.
+
+3. As someone who doesn't know much about animals, I want to learn some new things while taking this quiz.
+
+4. As someone who isn't too tech-savvy, I still want to be able to take the quiz.
 
 ## Deployment
 

@@ -60,7 +60,7 @@ function getMapDetails() {
   HTML attribute and putting it after the string "option" to create the key.
   For example: data-number: 1 will correspond to option1 in mapInfo. */
   options.forEach(option => {
-    var number = option.dataset["number"];
+    var number = option.dataset.number;
     option.innerText = selectedMap["option" + number]
   });
 
@@ -70,7 +70,7 @@ function getMapDetails() {
   value of "option2" in the currently generated map. Then the if
   statements check which animal that is and changes the correct feedback
   HTML accordingly. */
-  let animal = selectedMap["option2"];
+  let animal = selectedMap.option2;
   if (animal == "Platypuses") {
     $("#feedback8-correct").html(`<div class="text-center">
     <h4 class="correct">Correct!</h4>
@@ -105,8 +105,8 @@ and adapted to work with random questions being generated */
 
 function initMap() {
   var location = {
-    lat: selectedMap["latitude"],
-    lng: selectedMap["longitude"],
+    lat: selectedMap.latitude,
+    lng: selectedMap.longitude,
   };
   var map = new google.maps.Map(
     document.getElementById("map"), {

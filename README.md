@@ -128,9 +128,9 @@ There was and still is an issue with the user not being required to select a rad
   * Tried submitting quiz after only selecting incorrect answers each time: the results page told me "You got everything wrong!".
   * Tried selecting only correct answers to see if positive feedback would be given each time: success
   * Tried submitting quiz after only selecting correct answers each time: the results page told me "Wow! You answered everything correctly!".
-  * Tried submitting quiz after selecting one correct answer and the rest incorrect. The results page told me "You only got ${score} out of ${highScore} correct...".
+  * Tried submitting quiz after selecting one correct answer and the rest incorrect. The results page told me "You only got 1 out of 8 correct...".
   * Tried submitting quiz after selecting 6 correct questions and 2 incorrect. The results page told me "You got 6 out of 8 correct!"
-  * Selected "Try Again" button on results page: was taken back to question 1 with a different randomly generated map for question 8. 
+  * Selected "Try Again" button on results page: was taken back to question 1 with a different randomly generated map for question 8.
 
 * Testing Random Map functionality
   * Refreshed quiz multiple times until each of the four maps and answer order appeared: success

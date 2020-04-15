@@ -123,6 +123,20 @@ During the initial project review with my mentor, the idea of adding in the rand
 
 There was and still is an issue with the user not being required to select a radio button before clicking next. I tried to resolve this by adding the required attribute but that didn't work. I also tried an if...else statement which would alert the user if a radio button wasn't selected when pressing the next button. But even though the alert would pop up correctly, it would pop up as well even when a radio button was selected. I hope to return to this issue at a later date to resolve it.  
 
+* Navigating the quiz and testing results. These were all done on Safari and Chrome for desktop, and Safari and Chrome for mobile.
+  * Tried selecting only incorrect answers to see if negative feedback would be given each time: success
+  * Tried submitting quiz after only selecting incorrect answers each time: the results page told me "You got everything wrong!".
+  * Tried selecting only correct answers to see if positive feedback would be given each time: success
+  * Tried submitting quiz after only selecting correct answers each time: the results page told me "Wow! You answered everything correctly!".
+  * Tried submitting quiz after selecting one correct answer and the rest incorrect. The results page told me "You only got ${score} out of ${highScore} correct...".
+  * Tried submitting quiz after selecting 6 correct questions and 2 incorrect. The results page told me "You got 6 out of 8 correct!"
+  * Selected "Try Again" button on results page: was taken back to question 1 with a different randomly generated map for question 8. 
+
+* Testing Random Map functionality
+  * Refreshed quiz multiple times until each of the four maps and answer order appeared: success
+  * Tried answering the map question correctly and incorrectly with each of the four options to make sure that the results and feedback were always produced correctly: success.
+
+
 W3C Markup Validation was used to ensure that all of the HTML and CSS code hold up to industry standards:
 
 When testing index.html: Got an error stating that "the main element must not appear as a descendant of the section element." So I moved the main tags outside of the section element. I also got an error saying that "Attribute checked not allowed on element label at this point." I must have forgotten that attribute there when testing the radio buttons so I removed it. There were also three warnings saying that "The type attribute is unnecessary for JavaScript resources." so I removed those. I then tested the html again and got the following message: "Document checking completed. No errors or warnings to show."
@@ -137,14 +151,12 @@ When testing question-8.js: "Code is syntactically valid."
 
 ### User Stories Testing
 
-1. As a family, we want to take the quiz and compare our results.
-* 
-
-2. As someone without a computer, I want to take the quiz on my phone and still get all the same information.
-
-3. As someone who doesn't know much about animals, I want to learn some new things while taking this quiz.
-
-4. As someone who isn't too tech-savvy, I still want to be able to take the quiz.
+User Story | Steps User Takes
+------------ | -------------
+As a family, we want to take the quiz and compare our results. | At the end of the quiz there is the total correct answers and the option to try again for multiple users. No social sharing or high score has been added as of now.
+As someone without a computer, I want to take the quiz on my phone and still get all the same information. | All the questions and answers are easy to read on mobile devices. As the images are hidden the text is larger and there is no need for scrolling when selecting an answer.
+As someone who doesn't know much about animals, I want to learn some new things while taking this quiz. | After every question there is feedback with extra information and at the end of the quiz there is a hyperlink to purchase the book *animalkind*, which will allow users to learn more random facts.
+As someone who isn't too tech-savvy, I still want to be able to take the quiz. | When starting the quiz there is only the question, the possible answers, and a next button. As soon as an answer is selected the user will get feedback without needing to click anywhere else. There is no timer or anything that will make them feel rushed in figuring out what to do next. So as soon as they are finished reading their feedback they can click on "Next". This same process is repeated until the quiz is finished.
 
 ## Deployment
 

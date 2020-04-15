@@ -151,7 +151,7 @@ When testing question-8.js: "Code is syntactically valid."
 
 ### User Stories Testing
 
-User Story | 
+User Story | Results
 ------------ | -------------
 As a family, we want to take the quiz and compare our results. | At the end of the quiz there is the total correct answers and the option to try again for multiple users. No social sharing or high score has been added as of now.
 As someone without a computer, I want to take the quiz on my phone and still get all the same information. | All the questions and answers are easy to read on mobile devices. As the images are hidden the text is larger and there is no need for scrolling when selecting an answer.

@@ -12,7 +12,7 @@ let mapInfo = [{
     longitude: 133.7751,
     option1: "Kangaroo rats",
     option2: "Platypuses",
-    option3: "Zacatuche, or rabbit of the volcanoes",
+    option3: "Zacatuche, or the volcano rabbit",
     option4: "Lemurs",
   },
   {
@@ -20,7 +20,7 @@ let mapInfo = [{
     longitude: -122.0308,
     option1: "Platypuses",
     option2: "Kangaroo rats",
-    option3: "Zacatuche, or rabbit of the volcanoes",
+    option3: "Zacatuche, or the volcano rabbit",
     option4: "Lemurs",
   },
   {
@@ -28,14 +28,14 @@ let mapInfo = [{
     longitude: 46.8691,
     option1: "Kangaroo rats",
     option2: "Lemurs",
-    option3: "Zacatuche, or rabbit of the volcanoes",
+    option3: "Zacatuche, or the volcano rabbit",
     option4: "Platypuses",
   },
   {
     latitude: 23.6345,
     longitude: -102.5528,
     option1: "Kangaroo rats",
-    option2: "Zacatuche, or rabbit of the volcanoes",
+    option2: "Zacatuche, or the volcano rabbit",
     option3: "Platypuses",
     option4: "Lemurs",
   }
@@ -75,25 +75,25 @@ function getMapDetails() {
     $("#feedback8-correct").html(`<div class="text-center">
     <h4 class="correct">Correct!</h4>
     <p><img src="assets/images/gifs/platypus.gif" alt="Platypus walking" class="img-fluid mx-auto"></p>
-    <p>Mother hens are amazing moms even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+    <p>Platypuses are only found in Eastern Australia. Some odd but fascinating facts about them include that the males are one of the few venomous mammals and the females are one of the only mammals that lay eggs.</p>
     </div>`);
   } else if (animal == "Lemurs") {
     $("#feedback8-correct").html(`<div class="text-center">
     <h4 class="correct">Correct!</h4>
     <p><img src="assets/images/gifs/lemur.gif" alt="Lemurs walking" class="img-fluid mx-auto"></p>
-    <p>Mother hens are amazing moms even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+    <p>Lemurs only live in Madagascar and nearby Comoro islands. And even though there are a 105 different species of lemurs, they are considered to be the most endagered group of animals on Earth. </p>
     </div>`);
   } else if (animal == "Kangaroo rats") {
     $("#feedback8-correct").html(`<div class="text-center">
     <h4 class="correct">Correct!</h4>
     <p><img src="assets/images/gifs/kangaroo-rat.gif" alt="Kangaroo rat hopping along" class="img-fluid mx-auto"></p>
-    <p>Mother hens are amazing moms even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+    <p>Kangaroo rats can only be found in the arid regions of western and southwestern US. There are 22 different species of kangaroo rats, and many of them only call California home. Their ability to leap is what keeps them safe from many predators.</p>
     </div>`);
-  } else if (animal == "Zacatuche, or rabbit of the volcanoes") {
+  } else if (animal == "Zacatuche, or the volcano rabbit") {
     $("#feedback8-correct").html(`<div class="text-center">
     <h4 class="correct">Correct!</h4>
     <p><img src="assets/images/gifs/zacatuche.gif" alt="Zacatuche" class="img-fluid mx-auto"></p>
-    <p>Mother hens are amazing moms even before their babies hatch. They talk to their egg and listen as their chick peeps back at them from inside.</p>
+    <p>The world's second-smallest rabbit, the zacatuche, can only be found in the mountains surrounding Mexico City. Their population has unfortunately dwindled down to a mere 6000 due to hunting and habitat degradation because they live so close to a metropolitan area with a population of approximately 20 million.</p>
     </div>`);
   }
   initMap();

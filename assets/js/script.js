@@ -45,7 +45,7 @@ $(document).ready(function() {
     var nextQuestion = $(this).parents("form:first").data("question") + 1;
     recordAnswer(currentQuestion)
     $(".quizquestion").hide();
-    $("#question" + nextQuestion).fadeIn(700);
+    $("#question" + nextQuestion).show();
     return false;
   });
 });
@@ -70,28 +70,32 @@ function recordAnswer(x) {
       <p>You're pretty much as impressive as this bird!</p>
       <p><img src="assets/images/gifs/smart-bird.gif" alt="Bird playing game" class="img-fluid mx-auto"></p>
       <p><strong>There's always more to learn about our neighbors on this planet. Try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/" target="_blank">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p>
-      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Start over!</button></a></div></div>`);
+      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Start over!</button></a></div>
+      </div>`);
     } else if (score < 8 && score >= 5) {
       $("#results").html(`<div class="text-center">
       <h3>You got ${score} out of ${highScore} correct!</h3>
       <p>You might not be as resourceful as this bunny, but you did all right!</p>
       <p><img src="assets/images/gifs/bunny.gif" alt="Bunny" class="img-fluid mx-auto"></p>
       <p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/" target="_blank">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p>
-      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div></div>`);
+      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div>
+      </div>`);
     } else if (score < 5 && score > 0) {
       $("#results").html(`<div class="text-center">
       <h3>You only got ${score} out of ${highScore} correct...</h3>
       <p>You should probably study a bit more before you try again.</p>
       <p><img src="assets/images/gifs/dog.gif" alt="Dog jumping into bush" class="img-fluid mx-auto"></p>
       <p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/" target="_blank">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p>
-      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div></div>`);
+      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div>
+      </div>`);
     } else {
       $("#results").html(`<div class="text-center">
       <h3>You got everything wrong! </h3>
       <p>You should probably study a bit more before you try again.</p>
       <p><img src="assets/images/gifs/dog.gif" alt="Dog jumping into bush" class="img-fluid mx-auto"></p>
       <p><strong>If you want to learn more, you should try reading <a href="https://headlines.peta.org/animalkind-book-newkirk-stone/" target="_blank">'animalkind'</a> by Ingrid Newkirk to find out more extraordinary facts about animals and how we should treat them.</strong></p>
-      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div></div>`);
+      <div class="button text-center"><a href="index.html"><button type="button" class="btn btn-light btn-lg">Try again!</button></a></div>
+      </div>`);
     };
   };
   return false;

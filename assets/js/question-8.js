@@ -1,5 +1,5 @@
-// converts the html elements with a class name of option into an array
-// and stores them in the constant "options" so we can work with them later.
+/* converts the html elements with a class name of "option" into an array
+and stores them in the constant "options" so we can work with them later. */
 const options = Array.from(document.getElementsByClassName("option"));
 
 //an empty object where the randomly generated map info will be stored
@@ -51,7 +51,7 @@ function displayMap() {
 
 function getMapDetails() {
   /* Gets random number between 0 and length of possibleMaps
-  which will be used to assign the random map each time */
+  which is used to get the selected map. */
   var mapInfoIndex = Math.floor(Math.random() * possibleMaps.length);
   selectedMap = possibleMaps[mapInfoIndex];
 
@@ -68,8 +68,8 @@ function getMapDetails() {
   depending on which map was generated. As option2 is always the
   correct answer, the animal variable is set to be equal to the
   value of "option2" in the currently generated map. Then the if
-  statements check which animal that is and produce the correct feedback
-  accordingly. */
+  statements check which animal that is and changes the correct feedback
+  HTML accordingly. */
   let animal = selectedMap["option2"];
   if (animal == "Platypuses") {
     $("#feedback8-correct").html(`<div class="text-center">

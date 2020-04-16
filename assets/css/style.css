@@ -29,7 +29,7 @@ footer {
 }
 
 /* Styling for all the different texts */
-h1, h2, h3, p, li {
+h1, h2, h3, h4, p, li {
   font-weight: 300;
 }
 
@@ -42,8 +42,25 @@ li {
   font-size: 15px;
 }
 
+.landing-list {
+  list-style-type: circle;
+}
+
 p {
   font-size: 15px;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #EBDCF8;
+  text-decoration: none;
 }
 
 /* Styling for feedback sections that pop

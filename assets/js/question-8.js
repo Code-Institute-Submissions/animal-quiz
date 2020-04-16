@@ -7,6 +7,7 @@ let selectedMap = {};
 //an empty array where all the data from mapInfo will be stored
 let possibleMaps = [];
 
+//Array with object holding all the necessary data for the question
 let mapInfo = [{
     latitude: -25.2744,
     longitude: 133.7751,
@@ -43,7 +44,7 @@ let mapInfo = [{
 
 
 function displayMap() {
-  //copies and stores all the data from mapQuestions into a variable
+  //copies and stores all the data from mapInfo into an array.
   possibleMaps = [...mapInfo];
   getMapDetails();
 };

@@ -26,7 +26,14 @@ $(document).ready(function() {
   //Hides all feedback initially
   $(".feedback").hide();
   //Shows first question
-  $("#question1").show();
+  $("#landing-page").show();
+
+  /*on click event for when landing page (start quiz) button is clicked.
+   It will hide the landing page and show question 1. */
+  $("#landing-page #start").click(function() {
+    $("#landing-page").hide();
+    $("#question1").show();
+  })
 
   //on click event for when a radio button is selected
   $("input[type=radio]").click(function() {

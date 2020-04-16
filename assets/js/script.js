@@ -28,8 +28,9 @@ $(document).ready(function() {
   //Shows first question
   $("#landing-page").show();
 
-  /*on click event for when landing page (start quiz) button is clicked.
-   It will hide the landing page and show question 1. */
+  /* on click event for when landing page (start quiz) button is clicked.
+   *It will hide the landing page and show question 1.
+   */
   $("#landing-page #start").click(function() {
     $("#landing-page").hide();
     $("#question1").show();
@@ -43,10 +44,11 @@ $(document).ready(function() {
     checkAnswer(currentQuestion);
   });
 
-  /* on click event for when a next (submit) button is clicked.
-  It runs the recordAnswer function which will increase the score
-  by 1 if the user selected the correct answer. And it hides the
-  current question and shows the next question. */
+  /* on click event for when a submit button is clicked.
+   * It runs the recordAnswer function which will increase the score
+   * by 1 if the user selected the correct answer. And it hides the
+   * current question and shows the next question.
+   */
   $(".quizquestion .submit").click(function() {
     let currentQuestion = $(this).parents("form:first").data("question");
     let nextQuestion = $(this).parents("form:first").data("question") + 1;
@@ -58,18 +60,19 @@ $(document).ready(function() {
 });
 
 /* Calculate scores by recording each answer and adding 1
-to the total score if correct */
+ *to the total score if correct
+ */
 function recordAnswer(x) {
   //Checks which radio button was selected
   let submittedAnswer = $("input[name=question" + x + "]:checked").val();
+
   /* Checks whether the radio button selected matches the correct
   answer in sessionStorage*/
   if (submittedAnswer === sessionStorage.getItem("answer" + x)) {
     score++;
   };
 
-  /* returns total score after the last question and adds HTML code
-   to results div showing results depending on how many answers were correct */
+  // returns total score and results after last question
   if (x == total) {
     if (score == 8) {
       $("#results").html(`<div class="text-center">
@@ -111,11 +114,9 @@ function recordAnswer(x) {
 //shows feedback below radio buttons when selecting a radio button
 function checkAnswer(x) {
   let checkedAnswer = $("input[name=question" + x + "]:checked").val();
-  /* hides unordered list with options once user selects their answer.
-  This is so that the user can't change their answer after seeing feedback. */
+  // Hides unordered list with options once user selects their answer.
   $("#options" + x).hide();
-  /* Returns correct or incorrect feedback depending on whether the submitted answer
-  matches the correct answer stored in sessionStorage. */
+  // Returns correct or incorrect feedback depending on whether answer matches sessionStorage
   if (checkedAnswer === sessionStorage.getItem("answer" + x + "")) {
     $("#feedback" + x + "-correct").show();
   } else {

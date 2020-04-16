@@ -68,7 +68,7 @@ function getMapDetails() {
 
   /* Change the correct feedback depending on which map was generated.
   The animal variable is set to be equal to the
-  value of "option2" in the currently generated map. Then the if
+  value of "option2" in the currently generated map. The if
   statements check which animal that is and changes the correct feedback
   HTML accordingly. */
   let animal = selectedMap.option2;

@@ -1,11 +1,11 @@
 //Initial score is 0
-var score = 0;
+let score = 0;
 //Total amount of questions
-var total = 8;
+let total = 8;
 //Points received for each correct answer
-var point = 1;
+let point = 1;
 //Highest possible score
-var highScore = total * point;
+let highScore = total * point;
 
 //initializes function
 function init() {
@@ -31,7 +31,7 @@ $(document).ready(function() {
   //on click event for when a radio button is selected
   $("input[type=radio]").click(function() {
     //variable that determines the question the user is currently on
-    var currentQuestion = $(this).parents("form:first").data("question");
+    let currentQuestion = $(this).parents("form:first").data("question");
     //runs the checkAnswer function to show feedback
     checkAnswer(currentQuestion);
   });
@@ -41,8 +41,8 @@ $(document).ready(function() {
   by 1 if the user selected the correct answer. And it hides the
   current question and shows the next question. */
   $(".quizquestion .submit").click(function() {
-    var currentQuestion = $(this).parents("form:first").data("question");
-    var nextQuestion = $(this).parents("form:first").data("question") + 1;
+    let currentQuestion = $(this).parents("form:first").data("question");
+    let nextQuestion = $(this).parents("form:first").data("question") + 1;
     recordAnswer(currentQuestion)
     $(".quizquestion").hide();
     $("#question" + nextQuestion).show();
@@ -54,7 +54,7 @@ $(document).ready(function() {
 to the total score if correct */
 function recordAnswer(x) {
   //Checks which radio button was selected
-  var submittedAnswer = $("input[name=question" + x + "]:checked").val();
+  let submittedAnswer = $("input[name=question" + x + "]:checked").val();
   /* Checks whether the radio button selected matches the correct
   answer in sessionStorage*/
   if (submittedAnswer === sessionStorage.getItem("answer" + x)) {
@@ -103,7 +103,7 @@ function recordAnswer(x) {
 
 //shows feedback below radio buttons when selecting a radio button
 function checkAnswer(x) {
-  var checkedAnswer = $("input[name=question" + x + "]:checked").val();
+  let checkedAnswer = $("input[name=question" + x + "]:checked").val();
   /* hides unordered list with options once user selects their answer.
   This is so that the user can't change their answer after seeing feedback. */
   $("#options" + x).hide();

@@ -52,7 +52,7 @@ function displayMap() {
 function getMapDetails() {
   /* Gets random number between 0 and length of possibleMaps
   which is used to get the selected map. */
-  var mapInfoIndex = Math.floor(Math.random() * possibleMaps.length);
+  let mapInfoIndex = Math.floor(Math.random() * possibleMaps.length);
   selectedMap = possibleMaps[mapInfoIndex];
 
   /* Changes the text in each <li><label> of question 8 to the corresponding
@@ -60,7 +60,7 @@ function getMapDetails() {
   HTML attribute and putting it after the string "option" to create the key.
   For example: data-number: 1 will correspond to option1 in mapInfo. */
   options.forEach(option => {
-    var number = option.dataset.number;
+    let number = option.dataset.number;
     option.innerText = selectedMap["option" + number]
   });
 
@@ -104,17 +104,17 @@ function getMapDetails() {
 and adapted to work with random questions being generated */
 
 function initMap() {
-  var location = {
+  let location = {
     lat: selectedMap.latitude,
     lng: selectedMap.longitude,
   };
-  var map = new google.maps.Map(
+  let map = new google.maps.Map(
     document.getElementById("map"), {
       zoom: 3,
       center: location
     });
   //Marker for Location
-  var marker = new google.maps.Marker({
+  let marker = new google.maps.Marker({
     position: location,
     map: map
   });

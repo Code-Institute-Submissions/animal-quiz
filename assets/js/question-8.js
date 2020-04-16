@@ -42,17 +42,18 @@ let mapInfo = [{
   }
 ];
 
-
+//Copies and stores all the data from mapInfo into an array.
 function displayMap() {
-  //copies and stores all the data from mapInfo into an array.
   possibleMaps = [...mapInfo];
   getMapDetails();
+  initMap();
 };
 
-
+/**
+ * Gets random number between 0 and length of possibleMaps
+ * which is used to get the selected map.
+ */
 function getMapDetails() {
-  /* Gets random number between 0 and length of possibleMaps
-  which is used to get the selected map. */
   let mapInfoIndex = Math.floor(Math.random() * possibleMaps.length);
   selectedMap = possibleMaps[mapInfoIndex];
 
@@ -65,9 +66,8 @@ function getMapDetails() {
     option.innerText = selectedMap["option" + number]
   });
 
-  /* An if else statement which will change the correct feedback
-  depending on which map was generated. As option2 is always the
-  correct answer, the animal variable is set to be equal to the
+  /* Change the correct feedback depending on which map was generated.
+  The animal variable is set to be equal to the
   value of "option2" in the currently generated map. Then the if
   statements check which animal that is and changes the correct feedback
   HTML accordingly. */
@@ -97,13 +97,12 @@ function getMapDetails() {
     <p>The world's second-smallest rabbit, the zacatuche, can only be found in the mountains surrounding Mexico City. Their population has unfortunately dwindled down to a mere 6000 due to hunting and habitat degradation because they live so close to a metropolitan area with a population of approximately 20 million.</p>
     </div>`);
   }
-  initMap();
-
 };
 
-/* Google map function code initially taken from developers.google.com
-and adapted to work with random questions being generated */
-
+/**
+ *Google map function code initially taken from developers.google.com
+ *and adapted to work with random questions being generated
+ */
 function initMap() {
   let location = {
     lat: selectedMap.latitude,
@@ -122,7 +121,5 @@ function initMap() {
 };
 
 
-//Runs function when page is done loading
-
-displayMap();
+//Runs function when page is finished loading
 window.addEventListener("load", displayMap, false);

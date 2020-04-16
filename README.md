@@ -5,8 +5,6 @@ The Animal Trivia Quiz was created using the skills learned during the first sev
 
 This quiz is designed to entertain users while also teaching them some random facts about our co-inhabitants of the world. The layout of the quiz is meant to be minimalistic, making it easy to follow along and see results.
 
-Here is a link to the repository: https://github.com/debrawolford/animal-quiz.git
-
 Here is a link to the live preview: https://debrawolford.github.io/animal-quiz/
 
 ## UX design
@@ -22,7 +20,7 @@ Here is a link to the live preview: https://debrawolford.github.io/animal-quiz/
 * Animal lovers who want to see how much they know about animals and be able to share this information with their friends.
 
 #### How are we presenting the content?
-* With a minimalistic style that makes navigating the quiz very straightforward.
+* With a minimalistic style that makes navigating the quiz very easy.
 
 ####  Who else has done this and what have they done well/could be done better?
 * [National Geographic](https://kids.nationalgeographic.com/games/quizzes/quiz-whiz-animals/):
@@ -36,7 +34,7 @@ Here is a link to the live preview: https://debrawolford.github.io/animal-quiz/
 
 User Story | Requirements for User
 ------------ | -------------
-As a family, we want to take the quiz and compare our results. | A page at the end of the quiz displaying the amount of questions people have gotten correct and how well they did compared to others. Maybe a high score list or a way to share results via email or social media.
+As a family, we want to take the quiz and compare our results. | A page at the end of the quiz displaying the amount of questions people have answered correctly and how well they did compared to others. Maybe a high score list or a way to share results via email or social media.
 As someone without a computer, I want to take the quiz on my phone and still get all the same information. | A responsive, simple design is needed that will render well on phones. Making the text smaller and removing the images so that all the information can still be displayed properly.
 As someone who doesn't know much about animals, I want to learn some new things while taking this quiz. | Offer extra information as feedback every time a question is answered. And at the end of the quiz recommend they read the book *animalkind*, which will give them the chance to learn even more.
 As someone who isn't too tech-savvy, I still want to be able to take the quiz. | The quiz should be very straightforward, with minimal buttons and navigation menus. Simply the choices and a "Next" button should be enough.  
@@ -46,7 +44,7 @@ As someone who isn't too tech-savvy, I still want to be able to take the quiz. |
 
 (a) **Is it consistent?** The color pattern, the fonts and the header/footer will be the same on every page.
 
-(b) **Is it predictable?** The header has the page title and each page has a straightforward design with one question, 4 options, and a next button.
+(b) **Is it predictable?** The header has the page title and each page has a straightforward design with one question, 3 or 4 options, and a next button.
 
 (c) **Is it learnable?** When hovering over buttons the mouse will change to a hand to allow the user to see that they can select the option.
 
@@ -69,12 +67,15 @@ Below are the wireframes for desktop. [Click here](https://github.com/debrawolfo
 ### Existing Features
 
 * Immediate feedback: Users get feedback letting them know whether they answered correctly as soon as they select an answer.
-* Easy navigation: Navigating the quiz is very straightforward, with a "Next" button for users to select each time they have finished reading their feedback. At the end of the quiz there is a "Try again" button which will let users start the quiz over.
+* Easy navigation: Navigating the quiz is very straightforward, with a "Start Quiz" button to start the quiz and a "Next" button for users to select each time they have finished reading their feedback. At the end of the quiz there is a "Try again" button which will let users start the quiz over.
 * Results and different responses depending on how well the user did after completing the quiz.
 * All images and GIFs have an alt tag for screen readers and in case the image doesn't load properly.
 * Mobile responsiveness: The website has been designed with both mobile and desktop users in mind. All of the header images disappear when viewing the website from a small screen in order to save space. The text and map become become smaller, and the entire container takes up more percentage of the screen than on a desktop.
 * The external link for *animalkind* has a target="blank" attribute which will pop open a new window so users don't leave the website.
 * A map on question 8 that has 4 possible locations (randomly selected each time the quiz is loaded). The code for this map can be found in the file [question-8.js](https://github.com/debrawolford/animal-quiz/blob/master/assets/js/question-8.js).
+* A landing page to tell users a little more about the quiz.
+
+*I realise that the comments in the code are a bit lengthy and understand that these should be much shorter. But for now, while I am still new at programming, the detailed comments help me understand my code when looking back later on.*
 
 
 
@@ -136,12 +137,14 @@ There was and still is an issue with the user not being required to select a rad
   * Refreshed quiz multiple times until each of the four maps and answer order appeared: success
   * Tried answering the map question correctly and incorrectly with each of the four options to make sure that the results and feedback were always produced correctly: success.
 
-
+### W3C Markup Validation Testing
 W3C Markup Validation was used to ensure that all of the HTML and CSS code hold up to industry standards:
 
 When testing index.html: Got an error stating that "the main element must not appear as a descendant of the section element." So I moved the main tags outside of the section element. I also got an error saying that "Attribute checked not allowed on element label at this point." I must have forgotten that attribute there when testing the radio buttons so I removed it. There were also three warnings saying that "The type attribute is unnecessary for JavaScript resources." so I removed those. I then tested the html again and got the following message: "Document checking completed. No errors or warnings to show."
 
 When testing style.css: "Congratulations! No Error Found."
+
+### Javascript Validation Testing
 
 [Esprima](https://esprima.org/demo/validate.html) was used to validate the Javascript code and make sure there were no syntax errors:
 
@@ -180,7 +183,8 @@ Take the following steps to clone the website:
 3. Click on the clipboard icon to the right of the URL to copy it
 4. Open an Integrated Development Environment (IDE) and head over to the terminal
 5. Change the directory to where you want to clone the repository to
-6. Execute the following command by pasting in the URL you copied in step 3: git clone https://github.com/debrawolford/animal-quiz.git
+6. Execute the following command by pasting in the URL you copied in step 3:
+`git clone https://github.com/debrawolford/animal-quiz.git`
 7. Press Enter
 8. The site will then be cloned
 
@@ -204,4 +208,4 @@ All of the GIFs in the feedback and results sections have been downloaded from [
 
 Thanks to my mentor, Dick Vlaanderen for giving suggestions that challenged me and improved the overall project.
 
-Thanks to Andreas Jost from the Slack community for reviewing this project and suggesting to change the keyword "var" to "let" and adding a landing page. 
+Thanks to Andreas Jost from the Slack community for reviewing this project and suggesting to change the keyword "var" to "let" and adding a landing page.

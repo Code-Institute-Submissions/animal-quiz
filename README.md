@@ -206,6 +206,6 @@ All of the GIFs in the feedback and results sections have been downloaded from [
 
 ## Acknowledgements
 
-Thanks to my mentor, Dick Vlaanderen for giving suggestions that challenged me and improved the overall project.
+Thanks to my mentor, Dick Vlaanderen, for giving suggestions that challenged me and improved the overall project.
 
 Thanks to Andreas Jost from the Slack community for reviewing this project and suggesting to change the keyword "var" to "let" and adding a landing page.

@@ -1,4 +1,4 @@
-![Animal Quiz Image](assets/images/quiz-image-1.jpg)
+![Animal Quiz Image](assets/images/quiz-image-0.jpg)
 # *Animal Trivia Quiz* - Milestone Project 2 for Code Institute
 
 The Animal Trivia Quiz was created using the skills learned during the first seven modules of the Full Stack Web Development course. The goal of this project was to create a mobile-first fully responsive quiz using HTML, CSS, and Javascript.

@@ -63,6 +63,10 @@ footer a:hover {
   text-decoration: none;
 }
 
+#did-you-know {
+  display: none;
+}
+
 /* Styling for feedback sections that pop
 up depending on which radio button is selected */
 .feedback {
@@ -121,6 +125,10 @@ developed to be mobile first. */
   .animal-image {
     margin: 30px auto;
     width: 90%;
+    display: block;
+  }
+
+  #did-you-know {
     display: block;
   }
 

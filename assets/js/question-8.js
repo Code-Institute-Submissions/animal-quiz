@@ -42,6 +42,7 @@ let mapInfo = [{
   }
 ];
 
+
 //Copies and stores all the data from mapInfo into an array.
 function displayMap() {
   possibleMaps = [...mapInfo];
